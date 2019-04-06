@@ -1,0 +1,131 @@
+
+body{
+    width: 1200px;
+    margin: auto; 
+    padding: 20px 0;
+}
+*{
+    outline: 1px solid #f00;
+}
+
+/* wd_att banner  */
+
+.wd_att_h_banner{
+    width: 1200px;
+    height: 650px;
+    background-image: url(img/alvan-nee-1316903-unsplash.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.wd_att_h_banner_shape{
+    width: 200px;
+    height: 200px;
+    background-color: #bdd6cf;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    transform: rotate(45deg);
+    opacity: 0.6;
+}
+
+.wd_att_h_banner::after{
+    content: "跟著6gogo 一起去遛狗";
+    font-size: 20px;
+    line-height:80px;
+    text-align: center; 
+    width: 300px;
+    height: 80px;
+    border: #fff solid 1px;
+    color: #fff;
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+/* search_bar */
+.search_bar{
+    width: 600px;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    bottom:50px;
+    left: 300px;
+    opacity: 0.8;
+}
+
+select{
+    width: 100px;
+    outline: none;
+    border: none;
+}
+
+.search_bar_li{
+    display: inline-block;
+    margin:10px 10px;
+}
+
+label{
+    font-size: 12px;
+}
+
+
+/* 遛狗景點地區選擇 */
+
+.wd_att_area_ul{
+    font-size: 0;
+
+}
+
+.wd_att_area h1{
+font-size: 25px;
+padding:20px;
+}
+
+.wd_att_area_ul li{
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 16px;
+   
+}
+
+.wd_att_area_ul a{
+    display: inline-block;
+    font-size: 15px;
+}
+
+
+
+/* 熱門景點 */
+
+.wd_att_att h2{
+    font-size: 25px;
+    padding: 50px 0 0 0px;
+    text-align: center;
+}
+
+.wd_att_att_item_box{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wd_att_att_item{
+    width: 250px;
+    height: 250px;
+}

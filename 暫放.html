@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .content_wd_team{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.wd_team_photo{
+    width: 510px;
+    height: 400px;
+    background-color: #94b0da
+}
+
+.wd_team_text{
+    width: 510px;
+    height: 400px;
+    background-color: #ccc;
+}
+
+/* 中間菱形 */
+.wd_team_text::before{
+    content: "";
+    color: #fff;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.wd_team_text::after{
+    content: "揪團遛狗";
+    color:#f00;
+    display: block;
+    width: 18px;
+    height: 80px;
+    writing-mode:vertical-lr;
+    position: absolute;
+    font-size: 18px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Noto Serif TC', serif;
+}
+
+    </style>
+</head>
+<body>
+    
+<!-- 揪團 -->
+<div class="content_wd_team">
+        <div class="wd_team_photo"></div>
+        <div class="wd_team_text"></div>
+    </div>
+
+
+
+</body>
+</html>
