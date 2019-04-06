@@ -117,7 +117,7 @@ body{
 .banner_photo{
     width: 600px;
     height: 400px;
-    background-image:url(/img/sammy-leigh-scholl-157445-unsplash.jpg);
+    background-image:url(img/sammy-leigh-scholl-157445-unsplash.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position:center;
@@ -231,21 +231,21 @@ color: #2e2e2e;
 
 /* 遛狗景點區塊 */
 .wd_att_att{
-    background-image: url(/img/oscar-sutton-719939-unsplash.jpg);
+    background-image: url(img/oscar-sutton-719939-unsplash.jpg);
     background-size: 100%;
     position: relative;
 }
 
 /* 寵物餐廳區塊 */
 .wd_att_res{
-    background-image: url(/img/charles-451760-unsplash.jpg);
+    background-image: url(img/charles-451760-unsplash.jpg);
     background-size: 100%;
     position: relative;
 }
 
 /* 寵物住宿區塊 */
 .wd_att_hotel{
-    background-image: url(/img/roberto-nickson-555354-unsplash.jpg);
+    background-image: url(img/roberto-nickson-555354-unsplash.jpg);
     background-size: 100%;
     position: relative;
 }
