@@ -98,22 +98,26 @@ padding:20px;
     display: inline-block;
     padding: 6px 20px;
     font-size: 16px;
+    
    
 }
 
 .wd_att_area_ul a{
     display: inline-block;
     font-size: 15px;
+    text-decoration: none;
+    color:#8aa59d;
+    font-weight: bold;
 }
 
 
 
 /* 熱門景點 */
 
-.wd_att_att h2{
-    font-size: 25px;
-    padding: 50px 0 0 0px;
-    text-align: center;
+
+.wd_att_att{
+    width: 1200px;
+    position: relative;
 }
 
 .wd_att_att_item_box{
@@ -122,10 +126,44 @@ padding:20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
+}
+.wd_att_att h2{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top:30px;
 }
 
 .wd_att_att_item{
-    width: 250px;
+    width: 200px;
     height: 250px;
+    margin: 10px;
+    position: relative;
+}
+
+.wd_att_att_item img{
+    width: 200px;
+    height: 150px;
+}
+
+.wd_att_att_item h3{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    
+}
+
+.wd_att_att_item p{
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.wd_att_att_item span{
+    position: absolute;
+    top:0;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
 }

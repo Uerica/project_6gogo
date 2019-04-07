@@ -1,0 +1,112 @@
+
+
+body{
+    width: 1200px;
+    margin: auto; 
+    padding: 20px 0;
+}
+*{
+    outline: 1px solid #f00;
+}
+
+/* 頁首 */
+/* 本月活動&按鈕 */
+
+.wd_team_h_banner{
+    width: 1200px;
+    height: 500px;
+    display: flex;
+}
+
+.wd_team_active{
+    width: 600px;
+    height: 500px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.wd_team_active h2{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.wd_team_active span{
+    font-size: 20px;
+}
+
+
+/* 我的活動 */
+.wd_team_my_activity {
+    width: 100%-20px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.wd_team_my_activity_list {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wd_team_my_activity_calendar {
+    width: 50%;
+}
+
+.wd_team_my_activity_content {
+    width: 50%;
+}
+
+.wd_team_my_activity_item_list {
+    width: 100%;
+}
+
+.wd_team_my_activity_item {
+    width: 100%;
+}
+
+.wd_team_my_activity_item_two_col {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd_team_my_activity_item_date {
+    width: 30%;
+}
+
+.wd_team_my_activity_item_act {
+    width: 70%;
+}
+
+/* 設定文字 */
+.wd_team_my_activity_item h3{
+    font-size: 20px;
+    line-height: 30px;
+}
+.wd_team_my_activity_item p{
+    font-size: 15px;
+}
+
+
+
+/* 附近熱門 */
+
+.wd_team_nearby{
+    width: 1200px;
+    height: 500px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd_team_nearby_item{
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #2e2e2e;
+    border-radius: 10%;
+}
