@@ -153,6 +153,7 @@ display: inline-block;
 
 .wd_team_my_activity_content {
     width: 50%;
+    position: relative;
   
 }
 
@@ -196,6 +197,20 @@ display: inline-block;
     color: #555454;
     
 }
+
+.wd_team_my_activity_content a{
+   font-size: 16px;
+   text-decoration: none;
+   background-color: #88aaaa;
+   padding: 10px;
+   color: #fff;
+   position: absolute;
+   left:50%;
+   transform: translate(-50%,0);
+   bottom: 0px;
+}
+
+
 
 /* 行事曆 */
 
@@ -361,3 +376,4 @@ ul {
     text-decoration: none;
     color:#FF3333;
 }
+

@@ -5,7 +5,7 @@ body{
     padding: 20px 0;
 }
 *{
-    outline: 1px solid #f00;
+    /* outline: 1px solid #f00; */
 }
 
 /* wd_att banner  */
@@ -17,6 +17,7 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     position: relative;
+    background-repeat: no-repeat;
 
 }
 
@@ -69,7 +70,6 @@ body{
 select{
     width: 100px;
     outline: none;
-    border: none;
 }
 
 .search_bar_li{
@@ -78,7 +78,8 @@ select{
 }
 
 label{
-    font-size: 12px;
+    font-size: 13px;
+    margin: 0 5px;
 }
 
 
@@ -86,6 +87,7 @@ label{
 
 .wd_att_area_ul{
     font-size: 0;
+    margin: 20px;
 
 }
 
@@ -98,15 +100,21 @@ padding:20px;
     display: inline-block;
     padding: 6px 20px;
     font-size: 16px;
-    
+    border: 1px #88aaaa solid;    
    
+}
+
+.wd_att_area_ul li:first-child{
+    color: #fff;
+    background-color: #88aaaa;
+    font-weight: bold;
 }
 
 .wd_att_area_ul a{
     display: inline-block;
     font-size: 15px;
     text-decoration: none;
-    color:#8aa59d;
+    color:#88aaaa;
     font-weight: bold;
 }
 
@@ -118,6 +126,7 @@ padding:20px;
 .wd_att_att{
     width: 1200px;
     position: relative;
+    margin: 50px 0;
 }
 
 .wd_att_att_item_box{
@@ -140,7 +149,20 @@ padding:20px;
     height: 250px;
     margin: 10px;
     position: relative;
+    border: #ccc 2px solid;
 }
+
+.wd_att_att_item::after{
+    content: "";
+    width: 200px;
+    height: 30px;
+    background-color: #2e2e2e;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+}
+
 
 .wd_att_att_item img{
     width: 200px;
@@ -150,13 +172,17 @@ padding:20px;
 .wd_att_att_item h3{
     font-size: 15px;
     line-height: 25px;
-    text-align: center;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin: 5px;
+    
     
 }
 
 .wd_att_att_item p{
     font-size: 13px;
     line-height: 18px;
+    margin: 5px;
 }
 
 .wd_att_att_item span{
@@ -166,4 +192,13 @@ padding:20px;
     font-size: 15px;
     font-weight: bold;
     text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    margin: 5px;
+    z-index: 2;
+}
+
+.icon_heart a{
+    color:#FF3333;
+    position: absolute;
+    right:5px;
+    bottom: 5px;
 }
