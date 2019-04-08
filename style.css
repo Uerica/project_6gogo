@@ -157,7 +157,7 @@ color: #2e2e2e;
 
 /* banner按鈕 */
 .banner_text a{
-    background-color: #8aa59d;
+    background-color: #88aaaa;
     text-decoration: none;
     display: inline-block;
     margin: 20px 0;
@@ -251,7 +251,7 @@ color: #2e2e2e;
 }
 
 /* 右下角說明調整 */
-.wd_att p{
+.wd_att_des{
     width: 100px;
     height: 80px;
     background-color: #fff;
@@ -261,6 +261,9 @@ color: #2e2e2e;
     opacity: 0.8;
     border: #2e2e2e 1px solid;
     box-sizing: border-box;
+    position:absolute;
+    bottom: -20px;
+    right: -20px;
 }
 
 .wd_att span{
@@ -272,12 +275,14 @@ color: #2e2e2e;
 }
 
 .wd_att a{
+   
     font-size: 16px;
     display: inline-block;
     text-decoration: none;
-    position:absolute;
+    /* position:absolute;
     bottom: -20px;
-    right: -20px;
+    right: -20px; */
+
 }
 
 
@@ -303,6 +308,7 @@ color: #2e2e2e;
     width: 400px;
     height: 500px;
     background-color: #fff;
+   
 }
 
 .wd_team_text_main{
@@ -314,6 +320,16 @@ color: #2e2e2e;
     margin: 100px 50px;
     padding: 50px;
     text-align: center;
+    position: relative;
+  
+}
+
+.wd_team_text_main_box{
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
 
 
@@ -333,7 +349,7 @@ color: #2e2e2e;
     font-size: 15px;
     text-decoration: none;
     color: #fff;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .wd_team_text span{
@@ -364,7 +380,6 @@ color: #2e2e2e;
     width: 1200px;
     height: 600px;
 }
-
 
 
 
