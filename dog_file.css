@@ -9,7 +9,7 @@ body{
     
 }
 *{
-    outline: 1px solid #f00;
+    /* outline: 1px solid #f00; */
 }
 
 
@@ -24,7 +24,7 @@ body{
     width: 30%;
     height: 300px;
     border: 1px solid #ccc;
-    border-radius: 10%;
+    border-radius: 20% 0 20% 0;
     background-image: url(img/IMAG4730.jpg);
     background-size: 100%;
 }
@@ -41,6 +41,21 @@ body{
     width: 100%;
     height: 50%;
     position: relative;
+    margin: 0 20px;
+    color: #2e2e2e;
+}
+
+.df_user_name::after{
+    content: "";
+    width: 200px;
+    height: 40px;
+    background-color:#bdd6cf;
+    display:block;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .df_user_name p{
@@ -71,18 +86,27 @@ body{
     width: 25%;
     text-align: center;
     position: relative;
+  
+}
+
+.df_user_menu div:not(:first-child){
+    box-sizing: border-box;
+    border-left: #ccc 1px solid;
 }
 
 .df_user_menu_row h3{
     display: block;
     font-size: 20px;
     line-height: 25px;
+    color: #2e2e2e;
+    font-weight: bold;
 }
 
 .df_user_menu_row span{
     display: block;
     font-size: 18px;
     line-height: 25px;
+    color: #555454;
 }
 
 .df_user_menu_row div{
@@ -147,16 +171,77 @@ background-color: #bdd6cf;}
   
 
 /* 內容樣式 */
-
-.my_dog_content{
+.my_dog_content_flex{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 1200px;
-    height: 500px;
-    background-color: #ccc;
-    display: flex;
+  height: 500px;
 }
+
 .my_dog_content_pet{
     width: 50%;
     height: 50%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    border: #ccc 1px solid;
 }
+
+.my_dog_content_pet_img{
+    width: 30%;
+    position: relative;
+}
+.my_dog_content_pet_img img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.my_dog_content_pet_main{
+    width: 70%;
+    box-sizing: border-box;
+    border: #8aa59d 3px solid;
+    margin: 10px;
+}
+
+.my_dog_content_pet_main h3{
+    font-size: 20px;
+    line-height:30px;
+    font-weight: bold;
+    padding: 10px;
+    color: #2e2e2e; 
+}
+
+.my_dog_content_pet_main span{
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px; 
+    color: #2e2e2e
+}
+
+.my_dog_content_pet_main p{
+    font-size: 13px;
+    line-height: 30px;
+    padding: 10px;
+    color: #555454;
+}
+
+
+/* 新增狗狗 */
+.my_dog_content_pet a{
+    font-size: 90px;
+    color: #8aa59d;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+
 
   
