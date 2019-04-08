@@ -6,12 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="dm.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Noto+Serif+TC"
+        rel="stylesheet rel=" stylesheet>
+    <title>狗狗抱報</title>
 </head>
 
 <body>
     <header>
+        <!-- -----------------------navbar區 ----------------------- -->
+        <!-- icon : user & shopping cart -->
+        <div class="header_nav_all">
+            <div class="header_icon">
+                <a href="user" class="icon_user"><i class="fas fa-user"></i></a>
+                <a href="shopping" class="icon_shop_cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+
+            <!-- 萌犬檔案my dog class="md",我要遛狗walking dog class="wd" 狗狗商品dog product class="dp" 幫幫狗狗 help dog class="hd" 狗狗抱報 dog media class="dm"   -->
+
+            <!-- logo & nav bar -->
+            <div class="header_navbar">
+
+                <!-- logo -->
+                <div class="header_logo">
+                    <a href="index.html"><img src="img/6gogolo.svg"></a>
+                </div>
+
+                <!-- nav -->
+                <div class="header_nav">
+                    <ul class="main_nav_bar font_sans">
+                        <li class="main_nav"><a href="dog_file.html">萌犬檔案</a></li>
+                        <li class="main_nav nav_wd"><a href="#">我要遛狗</a>
+                            <ul class="minor_nav_bar">
+                                <li><a href="wd_att.html">遛狗行程</a></li>
+                                <li><a href="wd_team.html">揪團遛狗</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                            </ul>
+                        </li>
+                        <li class="main_nav nav_dp"><a href="#">好物推薦</a>
+                            <ul class="minor_nav_bar minor_dp">
+                                <li></li><a href="#">團購商品</a>
+                        </li>
+                        <li><a href="#">狗狗用品</a></li>
+                    </ul>
+                    </li>
+                    <li class="main_nav"><a href="">幫幫狗狗</a></li>
+                    <li class="main_nav"><a href="dog_media.html">狗狗抱報</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------navbar區 ----------------------- -->
         <div class="dm_new_popular">
             <!-- 2橫排 -->
             <div class="dm_popular_row dm_popular_main">
@@ -22,7 +71,7 @@
                     <p>狗狗療癒又貼心，是人類最忠心的夥伴。有牠們的陪伴及萌翻天的可愛舉動，不僅能讓我們獲得心靈上的慰藉、增添不少生活樂趣，更有益於健康。國外網站《Mental
                         Floss》分享以下10個養狗的好處，告訴你家裡如果有隻狗，是多麼幸福的一件事！
                         原文網址: 不只療癒又貼心！　「養狗10大好處」更健康、降低壓力</p>
-                        <span>more</span>
+                    <span>more</span>
                 </div>
             </div>
             <div class="dm_popular_row dm_popular_minor_box">
@@ -31,19 +80,22 @@
                     <!-- 直排內再2橫排 -->
                     <div class="dm_popular_row_col_row dm_popular_minor_item_img_top"></div>
                     <div class="dm_popular_row_col_row dm_popular_minor_item_text">
-                        <h2>不是幼犬就來不及了嗎？寵物教養十大誤解大公開</h2><span>more</span><p>Apr 5 by ququ</p>
+                        <h2>不是幼犬就來不及了嗎？寵物教養十大誤解大公開</h2><span>more</span>
+                        <p>Apr 5 by ququ</p>
                     </div>
                 </div>
                 <div class="dm_popular_row_col">
                     <div class="dm_popular_row_col_row dm_popular_minor_item_img_middle"></div>
                     <div class="dm_popular_row_col_row dm_popular_minor_item_text">
-                        <h2>你知道狗狗一天要睡十六小時嗎？原來都是被主人給打擾了</h2><span>more</span><p>Apr 5 by ququ</p>
+                        <h2>你知道狗狗一天要睡十六小時嗎？原來都是被主人給打擾了</h2><span>more</span>
+                        <p>Apr 5 by ququ</p>
                     </div>
                 </div>
                 <div class="dm_popular_row_col">
                     <div class="dm_popular_row_col_row dm_popular_minor_item_img_bottom"></div>
                     <div class="dm_popular_row_col_row dm_popular_minor_item_text">
-                        <h2>一天散步多久！要散步幾次！狗狗散步計算大解密</h2><span>more</span><p>Apr 5 by ququ</p>
+                        <h2>一天散步多久！要散步幾次！狗狗散步計算大解密</h2><span>more</span>
+                        <p>Apr 5 by ququ</p>
                     </div>
                 </div>
             </div>
@@ -64,7 +116,11 @@
             <div class="md_article">
                 <div class="md_article_item">
                     <div class="md_article_item_img"></div>
-                    <div class="md_article_item_text"><h3>地球上十大最美的狗，貴賓犬第五，黃金第三，第一是曲翑</h3><p>拉布拉多獵犬：拉布拉多獵犬是很親切溫和的狗狗。因為它們忠誠而且和藹的個性而適合家養。拉布拉多喜歡取悅家人，它們隨時都在準備著和你逗樂。它們非常聰明溫和，因此很適合與孩子們在一起。拉布拉多獵犬很忠誠，是家庭生活的理想寵物</p></div>
+                    <div class="md_article_item_text">
+                        <h3>地球上十大最美的狗，貴賓犬第五，黃金第三，第一是曲翑</h3>
+                        <p>拉布拉多獵犬：拉布拉多獵犬是很親切溫和的狗狗。因為它們忠誠而且和藹的個性而適合家養。拉布拉多喜歡取悅家人，它們隨時都在準備著和你逗樂。它們非常聰明溫和，因此很適合與孩子們在一起。拉布拉多獵犬很忠誠，是家庭生活的理想寵物
+                        </p>
+                    </div>
                 </div>
                 <div class="md_article_item">
                     <div class="md_article_item_img"></div>
@@ -75,7 +131,7 @@
                     <div class="md_article_item_text"></div>
                 </div>
             </div>
-            
+
 
             <!-- 熱門文章 -->
             <div class="md_popular_list">
@@ -148,7 +204,24 @@
 
 
 
+    <!-- footer 頁尾-->
+    <!-- ------------------------------------------------------------------------------------- -->
+    <div class="footer">
 
+        <div class="footer_main">
+            <ul>
+                <li><a href=""><i class="far fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 6gogo All Rights Reserved</p>
+        </div>
+
+    </div>
 </body>
 
 </html>
