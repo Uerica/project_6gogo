@@ -1,6 +1,6 @@
 body{
     width: 1200px;
-    margin: auto; 
+    margin: auto;
     padding: 20px 0;
 }
 *{
@@ -73,10 +73,11 @@ body{
 .main_nav{
     display: inline-block;
     position: relative;
-    line-height: 80px;
+    line-height: 40px;
     font-size: 16px;
     color: #2e2e2e;
     z-index: 2;
+    margin: 20px 0 ;
 }
 
 /* 把第二層選單消除 */
@@ -142,7 +143,7 @@ body{
 }
 
 .banner_text h1{
-font-size: 15px;
+font-size: 16px;
 line-height: 18px;
 color: #2e2e2e;
 }
@@ -532,8 +533,7 @@ line-height: 20px;
 }
 
 
-/* -------------------------------------------------------------------- */
-/* 遛狗景點 */
+/* -------------------------------------------------遛狗行程------------------------------------------------- */
 /* wd_att banner  */
 
 .wd_att_h_banner{
@@ -611,7 +611,7 @@ label{
 
 /* 遛狗景點地區選擇 */
 
-.wd_att_area_ul{
+/* .wd_att_area_ul{
     font-size: 0;
     margin: 20px;
 
@@ -642,7 +642,7 @@ padding:20px;
     text-decoration: none;
     color:#88aaaa;
     font-weight: bold;
-}
+} */
 
 
 
@@ -663,11 +663,11 @@ padding:20px;
     align-items: center;
 }
 .wd_att_att h2{
-    font-size: 25px;
+    font-size: 24px;
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
-    top:30px;
+    top:20px;
 }
 
 .wd_att_att_item{
@@ -717,7 +717,7 @@ padding:20px;
     color:#fff;
     font-size: 15px;
     font-weight: bold;
-    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    text-shadow: rgba(255, 255, 255,0.6) 0px 0px 10px;
     margin: 5px;
     z-index: 2;
 }
@@ -730,8 +730,157 @@ padding:20px;
 }
 
 
+/* 狗狗景點相片牆 */
+.wd_att_photo_waterfall_title{
+    text-align: center;
+    margin: 50px;
+    font-size: 24px;
+}
 
-/* 揪團遛狗 */
+.wd_att_photo_waterfall{
+    width: 1200px;
+    height: 1200px;
+    display: flex;
+    justify-content:space-between;
+    margin: 50px 0;
+}
+
+.wd_att_photo_waterfall_col{
+    width: 285px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
+.wd_att_photo_waterfall_col_item{
+    width: 100%;
+    background-color: rgb(14, 13, 13);
+}
+
+.waterfall_col_aa{
+    height: 28%;
+    background-image: url(img/john-cameron-753935-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_ab{
+    height: 22%;
+    background-image: url(img/53084559_620035735122419_7383669773965459456_n.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_ac{
+    height: 30%;
+    background-image: url(img/tahoe-beetschen-1368669-unsplash.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_ad{
+    height: 15%;
+    background-image: url(img/berkay-gumustekin-402114-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+.waterfall_col_ba{
+    height: 30%;
+    background-image: url(img/oscar-sutton-719939-unsplash.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_bb{
+    height: 15%;
+    background-image: url(img/roberto-nickson-555354-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_bc{
+    height: 22%;
+    background-image: url(img/yuliya-strizhkina-cartier-721262-unsplash.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_bd{
+    height: 28%;
+    background-image: url(img/lui-peng-708223-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+.waterfall_col_ca{
+    height: 15%;
+    background-image: url(img/berkay-gumustekin-402114-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_cb{
+    height: 30%;
+    background-image: url(img/jaron-mobley-1404090-unsplash.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_cc{
+    height: 28%;
+    background-image: url(img/lui-peng-708223-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_cd{
+    height: 22%;
+    background-image: url(img/yuliya-strizhkina-cartier-721262-unsplash.jpg);
+    background-size: 140%;
+    background-repeat: no-repeat;
+
+}
+
+
+
+.waterfall_col_da{
+    height: 22%;
+    background-image: url(img/53084559_620035735122419_7383669773965459456_n.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_db{
+    height: 30%;
+    background-image: url(img/tahoe-beetschen-1368669-unsplash.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_dc{
+    height: 28%;
+    background-image: url(img/john-cameron-753935-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.waterfall_col_dd{
+    height: 15%;
+    background-image: url(img/roberto-nickson-555354-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+/* -------------------------------------------------揪團遛狗------------------------------------------------- */
 
 .wd_team_h_banner{
     width: 1200px;
@@ -748,7 +897,7 @@ padding:20px;
 }
 
 .active_6gogo::before{
-    content: "5/15";
+    content: "4/12";
     display: block;
     width: 100px;
     height: 100px;
@@ -756,11 +905,12 @@ padding:20px;
     position: absolute;
     right:10px;
     top:10px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 100px;
     text-align: center;
     opacity: 0.8;
     color: #2e2e2e;
+    border-radius: 50%;
 }
 
 .active_6gogo::after{
@@ -778,12 +928,12 @@ padding:20px;
 }
 
 .active_popular::before{
-    content: "5/30";
+    content: "5/15";
     display: block;
     width: 100px;
     height: 100px;
     background-color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 100px;
     text-align: center;
     opacity: 0.7;
@@ -791,6 +941,7 @@ padding:20px;
     position: absolute;
     top:10px;
     right:10px;
+    border-radius: 50%;
 }
 
 .active_popular::after{
@@ -880,6 +1031,7 @@ display: inline-block;
 
 .wd_team_my_activity_item_list {
     width: 100%;
+   
 }
 
 .wd_team_my_activity_item {
@@ -930,6 +1082,7 @@ display: inline-block;
    transform: translate(-50%,0);
    bottom: 0px;
 }
+
 
 
 
@@ -1025,12 +1178,25 @@ ul {
     text-align: center;
     line-height: 30px;
     color: #555454;
+    position: relative;
 }
 
 .days span {
     color: #fff;
 }
 
+.days p::before{
+    content: "";
+    background-color: #FF3333;
+    width: 20px;
+    height: 20px;
+    display:block;
+    position: absolute;
+    border-radius: 50%;
+    top:5px;
+    right: 17px;
+    opacity: 0.6;
+}
 
 
 
@@ -1098,6 +1264,11 @@ ul {
     color:#FF3333;
 }
 
+
+/* 揪團 */
+
+
+
 /* -------------------------------------------------狗狗抱報------------------------------------------------- */
 /* header */
 /* 頁首推薦文章 */
@@ -1161,7 +1332,7 @@ ul {
 
 .dm_popular_minor_item_text{
     width: 60%;
-    background-color: #ddf0eb;
+  
     box-sizing: border-box;
     border:#ccc 1px solid;
     padding: 10px;
@@ -1169,11 +1340,13 @@ ul {
 
 }
 
+
+
 .dm_popular_main_col_text{
     box-sizing: border-box;
     border:#ccc 1px solid;
     padding: 10px;
-    background-color: #ddf0eb;
+   
 }
 
 /* 文字調整 */
@@ -1183,6 +1356,13 @@ ul {
     margin: 15px 0;
     font-weight:bold;
     color: #2e2e2e;
+}
+
+.dm_popular_minor_item_text h3{
+    font-size:13px;
+    line-height: 13px;
+    color: #555454;
+    margin: 12px 0;
 }
 
 .dm_popular_main_col_text p{
@@ -1196,6 +1376,7 @@ ul {
     font-weight: bold;
     display: block;
     text-align: right;
+    font-size: 12px;
 }
 
 .dm_popular_minor_item_text h2{
@@ -1206,10 +1387,10 @@ ul {
 
 .dm_popular_minor_item_text span{
     display: block;
-    line-height: 30px;
     color: #555454;
     text-align: right;
     font-weight: bold;
+    font-size: 12px;
 }
 
 .dm_popular_minor_item_text p{
@@ -1305,6 +1486,9 @@ ul {
     position: relative;
     padding: 10px 0 0 0;
 }
+.md_popular_list_main_title a{
+text-decoration: none;
+}
 
 /* 文字調整 */
 
@@ -1336,14 +1520,14 @@ ul {
 
 
 /* 裝飾調整 */
-.md_popular_list>div:not(:first-child){
-    border-top: #ccc 1px solid;
+.md_popular_list_main_title{
+    border-bottom: #ccc 1px solid;
 }
 
 
 
 
-/* ------------------------------------------------------------萌犬檔案 */
+/* -------------------------------------------------萌犬檔案------------------------------------------------- */
 /* 主人名字 關注功能 */
 
 .df_user_info{
@@ -1508,6 +1692,7 @@ background-color: #bdd6cf;}
     flex-wrap: wrap;
     width: 1200px;
   height: 500px;
+
 }
 
 .my_dog_content_pet{
@@ -1517,6 +1702,7 @@ background-color: #bdd6cf;}
     position: relative;
     box-sizing: border-box;
     border: #ccc 1px solid;
+    
 }
 
 .my_dog_content_pet_img{
@@ -1536,7 +1722,7 @@ background-color: #bdd6cf;}
     width: 70%;
     box-sizing: border-box;
     border: #8aa59d 3px solid;
-    margin: 10px;
+ 
 }
 
 .my_dog_content_pet_main h3{
@@ -1565,11 +1751,12 @@ background-color: #bdd6cf;}
 
 /* 新增狗狗 */
 .my_dog_content_pet a{
-    font-size: 90px;
+    font-size: 18px;
     color: #8aa59d;
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
-
+    text-decoration: none;
 }
+
