@@ -1,5 +1,7 @@
 
  /* #87CEEB #B0E0E6 #FFFFE0 */
+
+ /* -------------------------main_navbar--------------------------- */
 #menu_control{
     position: absolute;
 }
@@ -8,14 +10,12 @@
     width: 100%;
     height: 60px;
     background-color: #87CEEB;
-  
 }
 
 #menu_control{
    position: absolute;
    z-index: -1;
 }
-
 
 .navlogo{
     width: 100%;
@@ -28,8 +28,14 @@
     position: relative;
 }
 
+.navlogo a{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+}
+
 .navlogo img{
-width: 10%;
+width: 100%;
 height: 100%;
 }
 
@@ -98,12 +104,13 @@ height: 100%;
     /* transform: translateX(99%); */
     clip-path: circle(0px at 90% -10%);
     transition: clip-path .8s;
-    
+    position: relative;
+    z-index:11;
 }
 
 #menu_control:checked ~ .main_nav{
     /* transform: translateX(0%); */
-    clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1500px at 90% -10%);
 }
 
 .main_nav a{
@@ -145,16 +152,16 @@ height: 100%;
 
 @media screen and (min-width:768px){
     .navbar{
+       
         display: flex;
         height: 100px;
-        padding: 5px 20px;
+        padding: 5px 40px;
         box-sizing: border-box;
-      
     }
 
     .navlogo{
         padding:0;
-        width: 50%;
+        /* width: 50%; */
     }
 
     .navlogo img{
@@ -167,16 +174,11 @@ height: 100%;
         flex-flow: row;
         clip-path:none;
         height: 100%;
-        justify-content: space-between;
-       
+        justify-content:space-between;
     }
     
     .search_bar{
         display: none;
-    }
-
-    .main_nav a{
-      
     }
 
     .search_pc{
@@ -185,18 +187,144 @@ height: 100%;
         display: inline-block;
     }
 
-    
     .hb_link{
         display: none;
     }
-
-    
-
-
 
     .search_bar input{
         width: 0px;
     }
     
 }
+/* ---------------------------------------------------- */
+/* ------------------------home_carousel---------------------------- */
 
+
+.container {
+    width: 100%;
+}
+
+.carousel-item > div {
+    width:100%;
+    padding-bottom: 40%;
+    height: 0;
+
+  
+}
+.carousel-item img{
+        width:100%;
+      
+    
+}
+
+/* Carousel */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 500%;
+    transition: transform 0.5s;
+}
+
+.carousel-item {
+    position: relative;
+    float: left;
+    width: 20%;
+}
+
+/* Next / Prev Buttons */
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    background-color: #222;
+    opacity: 0.7;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-prev {
+    left: 2%;
+  
+}
+
+.carousel-prev::before {
+    content: '<';
+    font-weight:bold;
+}
+
+.carousel-next {
+    right: 2%;
+
+}
+
+.carousel-next::before {
+    content: '>';
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    opacity: 1;
+}
+
+/* Pagination */
+
+.carousel-pagination {
+    list-style: none;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-bullet {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    cursor: pointer;
+    margin: 0 3px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition-property: transform, opacity, background-color;
+    transition-duration: 0.3s;
+}
+
+.carousel-bullet:hover {
+    transform: scale(1.2);
+}
+
+.carousel-bullet.active-bullet, 
+.carousel-bullet.active-bullet:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-color: #fff;
+    cursor: default;
+}
+
+/* -- -----------------------carousel------------------------- -- */
