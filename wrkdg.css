@@ -14,11 +14,12 @@ margin: auto;
     margin: auto;
 }
 
-.wrk_hotatt_t{
+.wrk_hotatt_t , .wrk_hotatt_b{
   
     display:flex;
     flex-flow: column;
 }
+
 .wrk_item{
     height: 400px;
     position: relative;
@@ -91,7 +92,7 @@ background-color: antiquewhite;
 
 .wrk_col{
     box-sizing: border-box;
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 @media screen and (min-width:768px){
@@ -100,7 +101,7 @@ background-color: antiquewhite;
         padding: 15px;
     }
 
-    .wrk_hotatt_t{
+    .wrk_hotatt_t , .wrk_hotatt_b{
         max-width: 1200px;
         flex-flow:row;
     }
