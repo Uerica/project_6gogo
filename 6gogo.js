@@ -34,3 +34,10 @@ pagination.addEventListener('click', function(e) {
         slideTo(index);
     }
 }, false);
+
+
+// -----------------------------------------------------------------------------------------
+//遛狗景點 wrkdg
+
+
+
