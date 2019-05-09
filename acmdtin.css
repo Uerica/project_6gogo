@@ -7,3 +7,61 @@
         width: 100%;
         max-height: 500px;
     }
+
+
+
+
+
+
+.acm_content{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.acm_hot_t{
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.acm_pic{
+    height: 50%;
+}
+
+.acm_pic img{
+    width: 100%;
+}
+
+
+
+.text_box{
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.text_box_pic{
+    width: 80%;
+    height:16.6666666%;
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.text_box_txt{
+    width: 80%;
+    height: 41.666666%;
+
+    background-color: #0f0;
+}
+
+@media screen and (min-width:768px){
+    .acm_hot_t{
+        flex-flow: row;
+    }
+}
