@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="wrkdg.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
     <title>Document</title>
 </head>
 
@@ -31,7 +33,7 @@
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text">
                         <a href="#">
                             <span class="line_t"></span>
@@ -44,7 +46,7 @@
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text">
                     </div>
                 </div>
@@ -52,7 +54,7 @@
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text"></div>
                 </div>
             </div>
@@ -65,7 +67,7 @@
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text"></div>
                 </div>
             </div>
@@ -73,19 +75,39 @@
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text"></div>
                 </div>
             </div>
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
                     <div class="wrk_bgdisplay"></div>
-                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_pic"><img src="img/list_img01.png" alt=""></div>
                     <div class="wrk_text"></div>
                 </div>
             </div>
 
         </div>
+
+    </section>
+
+
+
+    
+    <section class="wrk_main">
+            <div class="wrk_title">
+                    <h1>熱門地區推薦</h1>
+                </div>
+        <div class="owl-carousel owl-theme">
+            <div class="wrk_carousel_item"><img src="img/type01_02.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_03.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_04.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_05.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_02.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_03.png" alt=""></div>
+            <div class="wrk_carousel_item"><img src="img/type01_04.png" alt=""></div>
+        </div>
+
 
     </section>
 
@@ -106,34 +128,42 @@
                 <div class="wrk_area_pic">
                     <div class="wrk_area_box">
 
-                        <a href="#"><div class="wrk_area_text">北台灣</div></a>
-                </div>
-            </div>
-        </div>
-
-            <div class="wrk_area_col col-6 col-md-3">
-                <div class="wrk_area_pic">
-                    <div class="wrk_area_box">
-                            <a href="#"><div class="wrk_area_text">中台灣</div></a>
-                </div>
+                        <a href="#">
+                            <div class="wrk_area_text">北台灣</div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="wrk_area_col col-6 col-md-3">
                 <div class="wrk_area_pic">
                     <div class="wrk_area_box">
-                            <a href="#"><div class="wrk_area_text">南台灣</div></a>
+                        <a href="#">
+                            <div class="wrk_area_text">中台灣</div>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="wrk_area_col col-6 col-md-3">
-                    <div class="wrk_area_pic">
-                        <div class="wrk_area_box">
-                                <a href="#"><div class="wrk_area_text">東台灣</div></a>
-                        </div>
+                <div class="wrk_area_pic">
+                    <div class="wrk_area_box">
+                        <a href="#">
+                            <div class="wrk_area_text">南台灣</div>
+                        </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="wrk_area_col col-6 col-md-3">
+                <div class="wrk_area_pic">
+                    <div class="wrk_area_box">
+                        <a href="#">
+                            <div class="wrk_area_text">東台灣</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
     </section>
 
@@ -179,29 +209,58 @@
 
 
 
+    <script src="dist/jquery-3.4.1.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+
+    <script>
+        //owl
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                center: true,
+                items: 2,
+                loop: true,
+                margin: 10,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                responsive: {
+                    600: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+                });
+        });
+    </script>
 
     <script>
 
 
         var wrk_item = document.querySelectorAll('.wrk_item');
-        var wrk_bgdisplay = wrk_item[0].querySelector('.wrk_bgdisplay');
         var line_t = document.querySelector('.line_t');
         var line_b = document.querySelector('.line_b');
 
+        for (i = 0; i < wrk_item.length; i++) {
+            console.log(wrk_item[i]);
+            wrk_item[i].addEventListener("mouseover", change_add, false);
+            wrk_item[i].addEventListener("mouseout", change_remove, false);
+        }
 
-        wrk_item[0].addEventListener("mousemove", change_add, false);
-        wrk_item[0].addEventListener("mouseout", change_remove, false);
-
-        function change_add() {
+        function change_add(e) {
+            console.log(e.currentTarget);
+            var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
             wrk_bgdisplay.classList.add('wrk_bgdisplay_add');
             line_t.classList.add('lineadd_t');
         }
 
-        function change_remove() {
+        function change_remove(e) {
+            console.log(e.currentTarget);
+            var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
             wrk_bgdisplay.classList.remove('wrk_bgdisplay_add');
             line_t.classList.remove('lineadd_t');
         }
-
 
     </script>
 </body>
