@@ -15,10 +15,10 @@
 
 <body>
     <header>
-    <div class="wrk_header_banner">
-        <img src="img/52918036_614898525636140_2558599107279060992_o.jpg" alt="wrk_header_banner">
-    </div>
-</header>
+        <div class="wrk_header_banner">
+            <img src="img/52918036_614898525636140_2558599107279060992_o.jpg" alt="wrk_header_banner">
+        </div>
+    </header>
     <!-- ----------------------content------------------------- -->
     <section class="wrk_main">
 
@@ -33,10 +33,10 @@
                     <div class="wrk_bgdisplay"></div>
                     <div class="wrk_pic"><img src="" alt=""></div>
                     <div class="wrk_text">
-                            <a href="#">
-                                    <span class="line_t"></span>
-                                    <span class="line_b"></span>
-                            </a>
+                        <a href="#">
+                            <span class="line_t"></span>
+                            <span class="line_b"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="wrk_col col-12 col-md-4">
                 <div class="wrk_item">
-                        <div class="wrk_bgdisplay"></div>
+                    <div class="wrk_bgdisplay"></div>
                     <div class="wrk_pic"><img src="" alt=""></div>
                     <div class="wrk_text"></div>
                 </div>
@@ -62,30 +62,30 @@
 
         <div class="wrk_hotatt_b">
 
-                <div class="wrk_col col-12 col-md-4">
-                    <div class="wrk_item">
-                        <div class="wrk_bgdisplay"></div>
-                        <div class="wrk_pic"><img src="" alt=""></div>
-                        <div class="wrk_text"></div>
-                    </div>
+            <div class="wrk_col col-12 col-md-4">
+                <div class="wrk_item">
+                    <div class="wrk_bgdisplay"></div>
+                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_text"></div>
                 </div>
-    
-                <div class="wrk_col col-12 col-md-4">
-                    <div class="wrk_item">
-                        <div class="wrk_bgdisplay"></div>
-                        <div class="wrk_pic"><img src="" alt=""></div>
-                        <div class="wrk_text"></div>
-                    </div>
-                </div>
-                <div class="wrk_col col-12 col-md-4">
-                    <div class="wrk_item">
-                            <div class="wrk_bgdisplay"></div>
-                        <div class="wrk_pic"><img src="" alt=""></div>
-                        <div class="wrk_text"></div>
-                    </div>
-                </div>
-    
             </div>
+
+            <div class="wrk_col col-12 col-md-4">
+                <div class="wrk_item">
+                    <div class="wrk_bgdisplay"></div>
+                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_text"></div>
+                </div>
+            </div>
+            <div class="wrk_col col-12 col-md-4">
+                <div class="wrk_item">
+                    <div class="wrk_bgdisplay"></div>
+                    <div class="wrk_pic"><img src="" alt=""></div>
+                    <div class="wrk_text"></div>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -95,24 +95,49 @@
 
 
     <section class="wrk_main">
-    <div class="wrk_title">
+        <div class="wrk_title">
             <h1>查看更多地區</h1>
         </div>
 
+
         <div class="wrk_area_t">
 
-            <div class="wrk_area_col col-12 col-md-4">
-                <div class="wrk_area_item">
-                    <div class="wrk_area_pic">
-                        <div class="text"></div>
+            <div class="wrk_area_col col-6 col-md-3">
+                <div class="wrk_area_pic">
+                    <div class="wrk_area_box">
+
+                        <a href="#"><div class="wrk_area_text">北台灣</div></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="wrk_area_col col-6 col-md-3">
+                <div class="wrk_area_pic">
+                    <div class="wrk_area_box">
+                            <a href="#"><div class="wrk_area_text">中台灣</div></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="wrk_area_col col-6 col-md-3">
+                <div class="wrk_area_pic">
+                    <div class="wrk_area_box">
+                            <a href="#"><div class="wrk_area_text">南台灣</div></a>
                     </div>
                 </div>
             </div>
 
+            <div class="wrk_area_col col-6 col-md-3">
+                    <div class="wrk_area_pic">
+                        <div class="wrk_area_box">
+                                <a href="#"><div class="wrk_area_text">東台灣</div></a>
+                        </div>
+                    </div>
+                </div>
+
     </section>
 
 
-    
 
 
 
@@ -138,8 +163,12 @@
 
 
 
-  
+
+
     <!-- ----------------------content------------------------- -->
+
+
+
 
 
 
@@ -158,10 +187,10 @@
         var wrk_bgdisplay = wrk_item[0].querySelector('.wrk_bgdisplay');
         var line_t = document.querySelector('.line_t');
         var line_b = document.querySelector('.line_b');
-        
-        
+
+
         wrk_item[0].addEventListener("mousemove", change_add, false);
-        wrk_item[0].addEventListener("mouseout",change_remove, false);
+        wrk_item[0].addEventListener("mouseout", change_remove, false);
 
         function change_add() {
             wrk_bgdisplay.classList.add('wrk_bgdisplay_add');

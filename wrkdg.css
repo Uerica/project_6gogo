@@ -106,3 +106,80 @@ background-color: antiquewhite;
         flex-flow:row;
     }
 }
+
+
+
+
+.wrk_area_t{
+    display:flex;
+    flex-flow: row wrap;
+
+}
+.wrk_area_col{
+    box-sizing: border-box;
+    padding: 15px;
+
+
+}
+
+.wrk_area_pic{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/rodebg.jpg);
+    background-size:cover;
+    
+}
+
+.wrk_area_box{
+    width: 70%;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+   
+}
+
+.wrk_area_text{
+    font-size: 20px;
+    font-weight: 600;
+    background: url(img/rodebg.jpg);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.wrk_area_box a{
+    text-decoration:none;
+}
+
+@media screen and (min-width:768px){
+    .wrk_area_t{
+        flex-flow: row nowrap;
+    }
+    .wrk_area_text{
+        font-size: 40px;
+    }
+
+    .wrk_area_box{
+        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        transition: .5s;
+    }
+    
+    .wrk_area_box:hover{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .wrk_area_pic{
+        height: 200px;
+    }
+    
+}
+
+
+

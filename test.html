@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    h1{
+        font-size: 50px;
+        letter-spacing: 5px;
+        background: url(img/53461706_620035815122411_454744553115615232_n.jpg);
+      
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .box{
+        background-color: #fff;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        vertical-align: middle;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .8;
+    }
+
+    .paren{
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translate(50%,50%);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(img/53461706_620035815122411_454744553115615232_n.jpg);
+        background-size: cover;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="paren">
+    <div class="box">
+    <h1>
+        北台灣
+    </h1>
+    
+    </div>
+</div>
+<script>
+var h1 = document.getElementsByTagName('h1');
+var box = document.getElementsByClassName('box');
+
+console.log(h1,",",box)
+
+box[0].addEventListener("mousemove",changetext,false);
+box[0].addEventListener("mouseout",backtext,false);
+
+function changetext(){
+    h1[0].innerText='看更多';
+}
+
+function backtext(){
+    h1[0].innerText='北台灣';
+}
+
+</script>
+</body>
+</html>
