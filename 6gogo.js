@@ -1,3 +1,10 @@
+
+window.onload=home_carousel;
+window.onload=wrkdg;
+
+
+function home_carousel(){
+
 var carousel = document.querySelector('.carousel');
 var container = carousel.querySelector('.carousel_container');
 var prevBtn = carousel.querySelector('.carousel_prev');
@@ -35,9 +42,40 @@ pagination.addEventListener('click', function(e) {
     }
 }, false);
 
+}
 
 // -----------------------------------------------------------------------------------------
 //遛狗景點 wrkdg
+
+
+
+function wrkdg(){
+var wrk_item = document.querySelectorAll('.wrk_item');
+var line_t = document.querySelector('.line_t');
+var line_b = document.querySelector('.line_b');
+
+for (i = 0; i < wrk_item.length; i++) {
+    console.log(wrk_item[i]);
+    wrk_item[i].addEventListener("mouseover", change_add, false);
+    wrk_item[i].addEventListener("mouseout", change_remove, false);
+}
+
+function change_add(e) {
+    console.log(e.currentTarget);
+    var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
+    wrk_bgdisplay.classList.add('wrk_bgdisplay_add');
+    line_t.classList.add('lineadd_t');
+}
+
+function change_remove(e) {
+    console.log(e.currentTarget);
+    var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
+    wrk_bgdisplay.classList.remove('wrk_bgdisplay_add');
+    line_t.classList.remove('lineadd_t');
+}
+
+}
+
 
 
 
