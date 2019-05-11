@@ -8,6 +8,8 @@
   max-height: 500px;
 }
 
+/* banner */
+
 .acm_content {
   max-width: 1200px;
   margin: auto;
@@ -17,8 +19,11 @@
   width: 100%;
   display: flex;
   flex-flow: column;
-  background-color: #ccc;
   margin-bottom: 40px;
+}
+
+.acm_title_bg{
+  background-color: #0f0;
 }
 
 .acm_pic {

@@ -1,59 +1,59 @@
-.col-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
-.col-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
-.col-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
-.col-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
-.col-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
-.col-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
-.col-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
-.col-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
-.col-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
-.col-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
-.col-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
-.col-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }
+.col-1{ padding: 0 10px; box-sizing: border-box; width: 8.333333%; }
+.col-2{ padding: 0 10px; box-sizing: border-box; width: 16.666666%; }
+.col-3{ padding: 0 10px; box-sizing: border-box; width: 25%; }
+.col-4{ padding: 0 10px; box-sizing: border-box; width: 33.333333%; }
+.col-5{ padding: 0 10px; box-sizing: border-box; width: 41.666666%; }
+.col-6{ padding: 0 10px; box-sizing: border-box; width: 50%; }
+.col-7{ padding: 0 10px; box-sizing: border-box; width: 58.333333%; }
+.col-8{ padding: 0 10px; box-sizing: border-box; width: 66.666666%; }
+.col-9{ padding: 0 10px; box-sizing: border-box; width: 75%; }
+.col-10{ padding: 0 10px; box-sizing: border-box; width: 83.333333%; }
+.col-11{ padding: 0 10px; box-sizing: border-box; width: 91.666666%; }
+.col-12{ padding: 0 10px; box-sizing: border-box; width: 100%; }
 
 
 @media screen and (min-width: 768px){
-    .col-md-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
-    .col-md-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
-    .col-md-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
-    .col-md-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
-    .col-md-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
-    .col-md-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
-    .col-md-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
-    .col-md-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
-    .col-md-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
-   .col-md-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
-   .col-md-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
-   .col-md-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+    .col-md-1{ padding: 0 10px; box-sizing: border-box; width: 8.333333%; }
+    .col-md-2{ padding: 0 10px; box-sizing: border-box; width: 16.666666%; }
+    .col-md-3{ padding: 0 10px; box-sizing: border-box; width: 25%; }
+    .col-md-4{ padding: 0 10px; box-sizing: border-box; width: 33.333333%; }
+    .col-md-5{ padding: 0 10px; box-sizing: border-box; width: 41.666666%; }
+    .col-md-6{ padding: 0 10px; box-sizing: border-box; width: 50%; }
+    .col-md-7{ padding: 0 10px; box-sizing: border-box; width: 58.333333%; }
+    .col-md-8{ padding: 0 10px; box-sizing: border-box; width: 66.666666%; }
+    .col-md-9{ padding: 0 10px; box-sizing: border-box; width: 75%; }
+   .col-md-10{ padding: 0 10px; box-sizing: border-box; width: 83.333333%; }
+   .col-md-11{ padding: 0 10px; box-sizing: border-box; width: 91.666666%; }
+   .col-md-12{ padding: 0 10px; box-sizing: border-box; width: 100%; }			
 }
 
 @media screen and (min-width: 992px){
-    .col-lg-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
-    .col-lg-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
-    .col-lg-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
-    .col-lg-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
-    .col-lg-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
-    .col-lg-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
-    .col-lg-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
-    .col-lg-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
-    .col-lg-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
-   .col-lg-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
-   .col-lg-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
-   .col-lg-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+    .col-lg-1{ padding: 0 10px; box-sizing: border-box; width: 8.333333%; }
+    .col-lg-2{ padding: 0 10px; box-sizing: border-box; width: 16.666666%; }
+    .col-lg-3{ padding: 0 10px; box-sizing: border-box; width: 25%; }
+    .col-lg-4{ padding: 0 10px; box-sizing: border-box; width: 33.333333%; }
+    .col-lg-5{ padding: 0 10px; box-sizing: border-box; width: 41.666666%; }
+    .col-lg-6{ padding: 0 10px; box-sizing: border-box; width: 50%; }
+    .col-lg-7{ padding: 0 10px; box-sizing: border-box; width: 58.333333%; }
+    .col-lg-8{ padding: 0 10px; box-sizing: border-box; width: 66.666666%; }
+    .col-lg-9{ padding: 0 10px; box-sizing: border-box; width: 75%; }
+   .col-lg-10{ padding: 0 10px; box-sizing: border-box; width: 83.333333%; }
+   .col-lg-11{ padding: 0 10px; box-sizing: border-box; width: 91.666666%; }
+   .col-lg-12{ padding: 0 10px; box-sizing: border-box; width: 100%; }			
 }
 
 
 @media screen and (min-width: 1200px){
-    .col-xl-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
-    .col-xl-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
-    .col-xl-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
-    .col-xl-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
-    .col-xl-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
-    .col-xl-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
-    .col-xl-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
-    .col-xl-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
-    .col-xl-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
-   .col-xl-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
-   .col-xl-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
-   .col-xl-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+    .col-xl-1{ padding: 0 10px; box-sizing: border-box; width: 8.333333%; }
+    .col-xl-2{ padding: 0 10px; box-sizing: border-box; width: 16.666666%; }
+    .col-xl-3{ padding: 0 10px; box-sizing: border-box; width: 25%; }
+    .col-xl-4{ padding: 0 10px; box-sizing: border-box; width: 33.333333%; }
+    .col-xl-5{ padding: 0 10px; box-sizing: border-box; width: 41.666666%; }
+    .col-xl-6{ padding: 0 10px; box-sizing: border-box; width: 50%; }
+    .col-xl-7{ padding: 0 10px; box-sizing: border-box; width: 58.333333%; }
+    .col-xl-8{ padding: 0 10px; box-sizing: border-box; width: 66.666666%; }
+    .col-xl-9{ padding: 0 10px; box-sizing: border-box; width: 75%; }
+   .col-xl-10{ padding: 0 10px; box-sizing: border-box; width: 83.333333%; }
+   .col-xl-11{ padding: 0 10px; box-sizing: border-box; width: 91.666666%; }
+   .col-xl-12{ padding: 0 10px; box-sizing: border-box; width: 100%; }			
 }
