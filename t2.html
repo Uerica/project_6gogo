@@ -8,6 +8,7 @@
     <title>Document</title>
     <style>
         .qa_wrap_box {
+            min-width: 320px;
             max-width: 1200px;
             width: 100%;
             margin: auto;
@@ -16,8 +17,8 @@
         .qa_wrap {
             width: 100%;
             box-sizing: border-box;
-            background-color: #ddf0eb;
-            border: 1px solid #88aaaa;
+            background-color: #e8dcd7;
+            border-bottom:1px solid #fff;
             color: #2e2e2e;
             font-size: 18px;
             line-height: 30px;
@@ -29,41 +30,64 @@
         .qa_main {
             box-sizing: border-box;
             padding: 0px;
-            border: 1px solid #88aaaa;
+            border: 1px solid #e8dcd7;
             height: 0;
-            font-size: 0;
-            transition:  height .5s;
+            opacity: 0;
+            transition:height .5s,opacity .0s;
         }
-
-        /* input[type="radio"] :checked + label .qa_wrap_box {
-            display: block;
-            background-color:red;
-        } */
-
+   
 
         #qa_a:checked~.qa_wrap_box .qa_main_a {
             display: block;
             padding: 10px;
-            border: 1px solid #88aaaa;
+            border: 1px solid #e8dcd7;
             height: 300px;
             font-size: 16px;
-
+            opacity: 1;
+            transition:height .5s,opacity .5s .5s;
         }
 
         #qa_b:checked~.qa_wrap_box .qa_main_b {
             display: block;
+            padding: 10px;
+            border: 1px solid #e8dcd7;
+            height: 300px;
+            font-size: 16px;
+            opacity: 1;
+            transition:height .5s,opacity .5s .5s;
         }
 
         #qa_c:checked~.qa_wrap_box .qa_main_c {
             display: block;
+            padding: 10px;
+            border: 1px solid #e8dcd7;
+            height: 300px;
+            font-size: 16px;
+            opacity: 1;
+            transition:height .5s,opacity .5s .5s;
         }
 
         #qa_d:checked~.qa_wrap_box .qa_main_d {
             display: block;
+            padding: 10px;
+            border: 1px solid #e8dcd7;
+            height: 300px;
+            font-size: 16px;
+            opacity: 1;
+            transition:height .5s,opacity .5s .5s;
         }
 
         #qa_e:checked~.qa_wrap_box .qa_main_e {
             display: block;
+            padding: 10px;
+            border: 1px solid #e8dcd7;
+            height: 300px;
+            font-size: 16px;
+            opacity: 1;
+            transition:height .3s,opacity .3s .3s;
+        }
+        input{
+            display:none;
         }
     </style>
 </head>
@@ -93,7 +117,7 @@
 
 
         <label for="qa_c">
-            <div class="qa_wrap">yoyo2</div>
+            <div class="qa_wrap">yoyo3</div>
         </label>
         <div class="qa_main qa_main_c">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
@@ -101,7 +125,7 @@
 
 
         <label for="qa_d">
-            <div class="qa_wrap">yoyo2</div>
+            <div class="qa_wrap">yoyo4</div>
         </label>
         <div class="qa_main qa_main_d">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
@@ -109,7 +133,7 @@
 
 
         <label for="qa_e">
-            <div class="qa_wrap">yoyo2</div>
+            <div class="qa_wrap">yoyo5</div>
         </label>
         <div class="qa_main qa_main_e">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
