@@ -1,6 +1,6 @@
 
-window.onload=home_carousel();
-window.onload=wrkdg();
+window.onload=home_carousel;
+window.onload=wrkdg;
 
 
 function home_carousel(){

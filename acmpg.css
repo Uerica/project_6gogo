@@ -1,0 +1,299 @@
+/* *{
+    outline: 1px solid #f00;
+       
+} */
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* -------------------------- */
+.acmpg_header_main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+  
+    margin: auto;
+}
+
+.aside{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.acmpg_aside {
+    width: 20%;
+    /* background-color: #0f0; */
+    box-sizing: border-box;
+    padding: 0 20px
+   
+}
+
+.acmpg_banner {
+    width: 80%;
+    box-sizing: border-box;
+    border:5px #fff solid;
+  
+}
+
+.acmpg_banner img{
+    width: 100%;
+} 
+
+.acmpg_banner .bigimg{
+    width:100%;
+  
+    background-color: #000;
+}
+
+.smallimg_col{
+    width: 20%;
+    height: 100px;
+    background-color: #bdd6cf;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.smallimg_box{
+    display:flex;
+}
+
+.smallimg{
+    width: 100%;
+    height: 100%;
+  
+
+}
+.acmpg_map{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+    box-sizing: border-box;
+    border:5px #fff solid;
+}
+
+.acmpg_map iframe{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+
+
+.acmpg_area{
+    width: 100%;
+    box-sizing: border-box;
+    border:5px #fff solid;
+
+}
+
+
+
+.acmpg_area .pic{
+ width: 100%;
+ position: relative;
+}
+
+.acmpg_area img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.acmpg_area a{
+    text-decoration: none;
+    display: block;
+    font-size: 0;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #bdd6cf;
+
+    
+}
+
+.acmpg_area span{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 30px;
+   
+}
+
+.acmpg_pc{
+    display: none;
+}
+
+.acm_wrknear{
+    width: 100%;
+   
+}
+.acm_wrknear .item{
+    width: 100%;
+    box-sizing: border-box;
+    border:5px #fff solid;
+    position: relative;
+}
+
+
+.acm_wrknear .pic{
+    width: 100%;
+}
+
+.acm_wrknear img{
+    vertical-align:bottom;
+    width: 100%;
+}
+.acm_wrknear .txt{
+    width: 100%;
+}
+
+.acm_wrknear a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0;
+ 
+}
+
+.acm_wrknear span{
+    display: inline-block;
+    font-size: 13px;
+    position: absolute;
+    line-height: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #bdd6cf;
+}
+
+/* ---------app--------- */
+.acmpg_map_app{
+    width: 100%;
+    height:0;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+.acmpg_map_app iframe{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+
+@media screen and (min-width:768px){
+   
+    .acmpg_pc{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+    .acmpg_app{
+        display: none;
+    }
+    
+}
+
+
+/* acmpg_txt_wrap */
+
+.acmpg_txt_wrap{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top:30px;
+}
+.acmpg_txt_wrap h1{
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+
+.acmpg_txt_wrap .star_box{
+    width: 100%;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 0 30px;
+    
+}
+
+.star img{
+    width: 10px;
+    margin:10px 2px;
+}
+
+.kind_box{
+    width: 100%;
+    font-size: 0;
+    box-sizing: border-box;
+    padding:10px 30px;
+  
+}
+
+.kind_box span{
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: #88aaaa 1px solid;
+    background-color: #ddf0eb;
+    color: #88aaaa;
+}
+
+.acmpg_txt_wrap .txt{
+    width: 100%;
+    box-sizing:border-box;
+    padding:15px 30px;
+}
+
+.acmpg_txt_wrap p{
+    font-size:15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.acmpg_txt_wrap .icon{
+    display: flex;
+    align-items: center;
+    font-size: 0;
+}
+
+.title_wrap{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.acmpg_txt_wrap .icon img{
+width: 20px;
+margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* acmpg_txt_wrap */
+
+/* acmpg_eva_wrap */
+
+
+
+/* acmpg_eva_wrap */
+
+

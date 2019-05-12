@@ -498,8 +498,9 @@ padding: 30px;
 
 
 @media screen and (min-width:768px){
-    .go_walkdog_wrap{
+    .go_walkdog_wrap_t , .go_walkdog_wrap_m{
         position: relative;
+        margin-top:100px;
     }
     
     .go_walkdog_wrap .pic_box{
@@ -509,8 +510,19 @@ padding: 30px;
         justify-content: flex-end;
         align-items: center;
     }
+
+    .go_walkdog_wrap_m .pic_box{
+        justify-content: flex-start;
+    }
+
+    .go_walkdog_wrap_m .pic_pc{
+        display: block;
+        width: 40%;
+        height: 500px;
+        background-color: #aaa;
+    }
    
-    .go_walkdog_wrap .pic_pc{
+    .go_walkdog_wrap_t .pic_pc{
         display: block;
         width: 40%;
         height: 500px;
@@ -534,12 +546,24 @@ padding: 30px;
         height: 100%;
     }
 
-    .go_walkdog_wrap .txt{
+    .go_walkdog_wrap_t .txt{
         width: 100%;
         max-width: 600px;
         position: absolute;
         top: 0;
         bottom: 0;
+        transform: translate(0,50%);
+        display: flex;
+        align-items: center;
+    }
+
+    .go_walkdog_wrap_m .txt{
+        width: 100%;
+        max-width: 600px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
         transform: translate(0,50%);
         display: flex;
         align-items: center;
