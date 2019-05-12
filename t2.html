@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .qa_wrap_box {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .qa_wrap {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #ddf0eb;
+            border: 1px solid #88aaaa;
+            color: #2e2e2e;
+            font-size: 18px;
+            line-height: 30px;
+            box-sizing: border-box;
+            padding: 10px;
+            color: 2e2e2e;
+        }
+
+        .qa_main {
+            box-sizing: border-box;
+            padding: 0px;
+            border: 1px solid #88aaaa;
+            height: 0;
+            font-size: 0;
+            transition:  height .5s;
+        }
+
+        /* input[type="radio"] :checked + label .qa_wrap_box {
+            display: block;
+            background-color:red;
+        } */
+
+
+        #qa_a:checked~.qa_wrap_box .qa_main_a {
+            display: block;
+            padding: 10px;
+            border: 1px solid #88aaaa;
+            height: 300px;
+            font-size: 16px;
+
+        }
+
+        #qa_b:checked~.qa_wrap_box .qa_main_b {
+            display: block;
+        }
+
+        #qa_c:checked~.qa_wrap_box .qa_main_c {
+            display: block;
+        }
+
+        #qa_d:checked~.qa_wrap_box .qa_main_d {
+            display: block;
+        }
+
+        #qa_e:checked~.qa_wrap_box .qa_main_e {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="qa_a">
+    <input type="checkbox" id="qa_b">
+    <input type="checkbox" id="qa_c">
+    <input type="checkbox" id="qa_d">
+    <input type="checkbox" id="qa_e">
+
+    <div class="qa_wrap_box">
+        <label for="qa_a">
+            <div class="qa_wrap">yoyo1</div>
+        </label>
+        <div class="qa_main qa_main_a">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
+        </div>
+
+
+        <label for="qa_b">
+            <div class="qa_wrap">yoyo2</div>
+        </label>
+        <div class="qa_main qa_main_b">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
+        </div>
+
+
+        <label for="qa_c">
+            <div class="qa_wrap">yoyo2</div>
+        </label>
+        <div class="qa_main qa_main_c">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
+        </div>
+
+
+        <label for="qa_d">
+            <div class="qa_wrap">yoyo2</div>
+        </label>
+        <div class="qa_main qa_main_d">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
+        </div>
+
+
+        <label for="qa_e">
+            <div class="qa_wrap">yoyo2</div>
+        </label>
+        <div class="qa_main qa_main_e">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, itaque.</p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
