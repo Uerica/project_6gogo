@@ -2051,3 +2051,90 @@ letter-spacing:5px;
 width: 20px;
 margin-left: 10px;
 }
+
+/* ---------------------------------- */
+
+.mem_contain{
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    min-width: 390px;
+    text-align: center;
+}
+
+.mem_contain a{
+    display:block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 3px;
+    font-size: 15px;
+    background-color: #d3bb80;
+    color: #fff;
+    line-height: 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.mem_contain input{
+display: block;
+width: 100%;
+height: 30px;
+box-sizing: border-box;
+border: 1px solid #e9dfdb;
+border-radius: 6px;
+margin: auto;
+text-align: center;
+font-size: 1rem;
+}
+
+.mem_contain h2{
+    font-size: 20px;
+    line-height: 50px;
+    color: #d3bb80;
+}
+
+.mem_contain h3{
+    font-size: 15px;
+    line-height: 30px;
+    color: #2e2e2e
+}
+
+.mem_wrap{
+    display: inline-block;
+    background-color: #e8dcd7;;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-top: 280px;
+    position: relative;
+}
+
+.mem_contain input:focus{
+    border: 2px solid #d3bb80;
+}
+
+.sign_in{
+    margin-top:20px;
+}
+
+.sign_in a{
+    color: #d3bb80;
+    background-color: #e8dcd7;
+    border: #d3bb80 1px solid;
+    box-sizing: border-box;
+}
+
+.mem_contain .dog_pic{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+   
+}
+
+.mem_contain img{
+    width: 100%;
+    position: absolute;
+    top:-300px;
+    right: 0;
+    margin: auto;
+}
