@@ -16,13 +16,13 @@
     text-align: center;
     margin: auto;
     box-sizing: border-box;
-    border: 1px #e8dcd7 solid;
+    border: 1px #ddf0eb solid;
     padding:5px;
     margin-bottom: 40px;        
 }
 
 .title_box .title{
-    background: #e8dcd7;
+    background: #ddf0eb;
 }
 
 .title_box h1{
@@ -54,26 +54,25 @@
 }
 
 .wrk_item{
-    height: 400px;
-    position: relative;
-    /* background-color: #ccc; */
+    box-sizing: border-box;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.22);
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:768px){
+    .wrk_item{margin-bottom:0;}
 }
 
 .wrk_pic{
-
-
-/* height:62.5%; */
 width: 100%;
 }
 
 .wrk_pic img{
     width: 100%;
+    
 }
 
-.wrk_text{
-height: 150px;
-/* background-color: antiquewhite; */
-}
+
 
 .wrk_text a{
     width: 30px;
@@ -83,11 +82,47 @@ height: 150px;
     position: relative;
 }
 
+.wrk_text h3{
+    font-size: 15px;
+    line-height: 30px;
+    color: #2e2e2e
+}
+
+.wrk_text p{
+    font-size: 12px;
+    line-height: 28px;
+    color: rgb(82, 80, 80);
+}
+
+.wrk_text .txt{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.wrk_hot_icon{
+    display:inline-block;
+    width: 20px;
+   
+}
+
+.wrk_hotatt_t h4{
+    font-size: 12px;
+    line-height:20px;
+    color: #aaa
+}
+
+.wrk_hotatt_t .txt_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 
+
 .line_t , .line_b{
     width: 100%;
-    height: 2px;
-    background-color:rgb(240, 93, 93);
-    position: absolute;
+    height: 1px;
+    /* background-color:#2e2e2e; */
+    /* position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -95,7 +130,7 @@ height: 150px;
     margin: auto;
     transform: translate(0%,-50%);
     transition: .5s;
-}
+} */
 
 .lineadd_t{
     transform:rotate(90deg);
@@ -104,11 +139,12 @@ height: 150px;
 .lineadd_b{
     transform:rotate(180deg);
 }
+ */
 
-.wrk_bgdisplay{
-    height: 52.5%;
+/* .wrk_bgdisplay{
+    height: 55%;
     width: 100%;
-    background-color:#e8dcd7;
+    background-color:#ddf0eb;
     position: absolute;
     z-index: -1;
     left:0px;
@@ -119,15 +155,16 @@ height: 150px;
 }
 
 .wrk_bgdisplay_add{
-    left: -20px;
+    left: -10px;
     top: 30px;
     transition: .5s;
-}
+} */
 
 .wrk_col{
     box-sizing: border-box;
     padding: 20px 40px;
 }
+
 
 @media screen and (min-width:768px){
     .wrk_col{
@@ -139,6 +176,8 @@ height: 150px;
         max-width: 1200px;
         flex-flow:row;
     }
+    
+
 }
 
 
@@ -146,6 +185,9 @@ height: 150px;
 /* ------------------------------------------------- */
 /* -------------------------查看更多地區------------------------ */
 
+.wrk_area_wrap{
+    margin-top:60px;
+}
 
 .wrk_area_t{
     display:flex;
