@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+  html {
+	height: 100%;
+	font-family: 'Nunito', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+	line-height: 1.5;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+}
+
+.tabs {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.tab-list {
+	padding-bottom: 1rem;
+}
+
+.tab {
+	border: 1px solid transparent;
+	border-radius: 40px;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	color: rgba(255, 255, 255, .6);
+	font-weight: 700;
+	background: rgba(10, 20, 30, .2);
+}
+
+.tab.active {
+	color: white;
+	background: rgba(255,255,255,.1);
+	border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+	display: none;
+	padding: 1.5rem;
+	color: #4a5666;
+}
+
+.show {
+	display: block;
+}
+    </style>
+</head>
+<body>
+        <h1>Tabs</h1>
+
+        <div class="tabs">
+            <nav class="tab-list">
+                <a class="tab active" href="#one">One</a>
+                <a class="tab" href="#two">Two</a>
+                <a class="tab" href="#three">Three</a>
+            </nav>
+        
+            <div id="one" class="tab-content show">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </div>
+        
+            <div id="two" class="tab-content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+        
+            <div id="three" class="tab-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</div>
+        </div>
+
+            <script src="dist/jquery-3.4.1.min.js">
+            $(".tab-list").on("click", ".tab", function(e) {
+	e.preventDefault();
+
+	$(".tab").removeClass("active");
+	$(".tab-content").removeClass("show");
+	$(this).addClass("active");
+	$($(this).attr("href")).addClass("show");
+});
+</script>
+</body>
+</html>
