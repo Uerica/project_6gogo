@@ -8,15 +8,43 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="col.css">
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="wrkdg.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
-    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
     <title>遛狗景點</title>
 </head>
 
 <body>
     <header>
+          <!-- -----------------------navbar------------------------- -->
+          <div class="navbar">
+                <input type="checkbox" id="menu_control">
+                <div class="navlogo">
+                    <h1>
+                        <a href="index.html">
+                            <img src="img/logo_w.svg" alt="6gogo 遛狗狗">
+                        </a>
+                    </h1>
+    
+                    <label for="menu_control" class="hb_link">
+                        <span class="line line_t"></span>
+                        <span class="line line_c"></span>
+                        <span class="line line_b"></span>
+                    </label>
+                </div>
+                <nav class="main_nav">
+                    <div class="search_bar">
+    
+                        <a href="index.html"><img src="img/search_icon.svg" alt="search"></a>
+                    </div>
+                    <a href="wrkdg.html">遛狗景點</a>
+                <a href="acmdtin.html">友善住宿</a>
+                <a href="rstrnt.html">寵物餐廳</a>
+                <a href="#">揪團遛狗</a>
+                <a href="#">我的收藏</a>
+                <a href="#">會員中心</a>
+                    <a href="#" class="search_pc_a"><img src="img/search_icon.svg" alt="#" class="search_pc"></a>
+                </nav>
+            </div>
+            <!-- -----------------------navbar------------------------- -->
         <div class="wrk_header_banner">
             <img src="img/52918036_614898525636140_2558599107279060992_o.jpg" alt="wrk_header_banner">
         </div>
@@ -281,24 +309,7 @@
 
 
 
-        <section class="wrk_main">
-                <div class="title_box">
-                        <div class="title">
-                            <h1>熱門地區</h1>
-                        </div>
-                    </div>
-            <div class="owl-carousel owl-theme">
-                <div class="wrk_carousel_item"><img src="img/type01_02.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_03.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_04.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_05.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_02.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_03.png" alt=""></div>
-                <div class="wrk_carousel_item"><img src="img/type01_04.png" alt=""></div>
-            </div>
-
-
-        </section>
+       
 
 
 
@@ -389,6 +400,11 @@
 
     <!-- ----------------------content------------------------- -->
 
+    <footer>
+            <div class="copyright">
+                <p>Copyright © 6gogo All Rights Reserved</p>
+            </div>
+        </footer>
 
 
 
@@ -400,62 +416,6 @@
 
 
 
-
-    <script src="dist/jquery-3.4.1.min.js"></script>
-    <script src="dist/owl.carousel.min.js"></script>
-
-    <script>
-        //owl
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                center: true,
-                items: 2,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true,
-                responsive: {
-                    600: {
-                        items: 4
-                    },
-                    1200: {
-                        items: 5
-                    }
-                }
-            });
-        });
-    </script>
-    <script src="6gogo.js"></script>
-    <!-- 
-    <script>
-
-
-        var wrk_item = document.querySelectorAll('.wrk_item');
-        var line_t = document.querySelector('.line_t');
-        var line_b = document.querySelector('.line_b');
-
-        for (i = 0; i < wrk_item.length; i++) {
-            console.log(wrk_item[i]);
-            wrk_item[i].addEventListener("mouseover", change_add, false);
-            wrk_item[i].addEventListener("mouseout", change_remove, false);
-        }
-
-        function change_add(e) {
-            console.log(e.currentTarget);
-            var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
-            wrk_bgdisplay.classList.add('wrk_bgdisplay_add');
-            line_t.classList.add('lineadd_t');
-        }
-
-        function change_remove(e) {
-            console.log(e.currentTarget);
-            var wrk_bgdisplay = e.currentTarget.querySelector('.wrk_bgdisplay');
-            wrk_bgdisplay.classList.remove('wrk_bgdisplay_add');
-            line_t.classList.remove('lineadd_t');
-        }
-
-    </script> -->
 </body>
 
 </html>

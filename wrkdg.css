@@ -218,15 +218,16 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(img/bgflower.jpg);
-    background-size:cover;
+    box-sizing: border-box;
+    border: 1px solid #ddf0eb;
+    padding: 5px;
     
 }
 
 .wrk_area_box{
-    width: 70%;
-    height: 70%;
-    background-color: #fff;
+    width:100%;
+    height:100%;
+    background-color:#ddf0eb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,11 +238,7 @@ width: 100%;
 .wrk_area_text{
     font-size: 20px;
     font-weight: 600;
-    background: url(img/bgflower.jpg);
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    white-space:nowrap;
+    color: #2e2e2e;
 }
 
 .wrk_area_box a{
@@ -253,7 +250,7 @@ width: 100%;
         flex-flow: row nowrap;
     }
     .wrk_area_text{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .wrk_area_pic{
@@ -264,21 +261,9 @@ width: 100%;
 
     .wrk_area_pic:hover{
         box-sizing: border-box;
-        border: rgb(240, 93, 93) 3px solid;
+        border: #d3bb8d 3px solid;
     }
 
-    /* .wrk_area_box{
-        -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-        transition: .5s;
-    }
-    
-    .wrk_area_box:hover{
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    
-    } */
-    
     .wrk_area_pic{
         height: 200px;
     }
