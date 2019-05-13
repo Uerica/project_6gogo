@@ -822,15 +822,40 @@ input{
 
 /* ------------------wrk---------------------- */
 
-.wrk_header_banner{
+.wrk_header_banner , .acm_header_banner{
     width: 100%;
     margin: auto;
-    height: 100%;
     max-height: 60vh;
+    position: relative;
 }
 .wrk_header_banner img{
     width: 100%;
     max-height: 60vh;
+    filter: contrast(60%)
+}
+.banner_txt{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(0%,50%);
+   
+}
+.banner_txt h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    transform: translate(0%,-50%);
+   
+}
+
+@media screen and (min-width:768px){
+    .banner_txt h1{
+        font-size: 90px;
+    }
 }
 /* ------------------------------------------------- */
 
@@ -1363,11 +1388,16 @@ width: 100%;
     display: flex;
     }
 
-.rst_header_banner .pic {
+.rst_header_banner .pic{
     
     width: 70%;
     height: 60vh;
     }
+
+.rst_header_banner img{
+    width: 100%;
+    
+}
 
 .rst_header_banner .bgpic {
     background-color: #fff;
