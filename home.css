@@ -822,7 +822,7 @@ input{
 
 /* ------------------wrk---------------------- */
 
-.wrk_header_banner , .acm_header_banner{
+.wrk_header_banner , .acm_header_banner , .rst_header_banner{
     width: 100%;
     margin: auto;
     max-height: 60vh;
@@ -831,8 +831,21 @@ input{
 .wrk_header_banner img{
     width: 100%;
     max-height: 60vh;
-    filter: contrast(60%)
+    filter: contrast(50%)
 }
+
+.acm_header_banner img{
+    width: 100%;
+    max-height: 60vh;
+    filter: contrast(50%)
+}
+
+.rst_header_banner img{
+    width: 100%;
+    max-height: 60vh;
+    filter: contrast(50%)
+}
+
 .banner_txt{
     width: 100%;
     position: absolute;
@@ -860,13 +873,19 @@ input{
 /* ------------------------------------------------- */
 
 .title_box{
-    width:30vw;
+    width:100%;
     text-align: center;
     margin: auto;
     box-sizing: border-box;
     border: 1px #ddf0eb solid;
     padding:5px;
     margin-bottom: 40px;        
+}
+
+@media screen and (min-width:768px){
+    .title_box{
+        width:30vw;
+    }
 }
 
 .title_box .title{
@@ -1047,6 +1066,7 @@ width: 100%;
 
 .wrk_area_wrap{
     margin-top:60px;
+    padding: 50px;
 }
 
 .wrk_area_t{
@@ -1383,7 +1403,7 @@ width: 100%;
     width: 100%;
     margin: auto;
     height: 100%;
-    max-height: 60vh;
+    max-height: 20vh;
     background-color: #ccc;
     display: flex;
     }
@@ -1402,7 +1422,7 @@ width: 100%;
 .rst_header_banner .bgpic {
     background-color: #fff;
     width: 30%;
-    height: 60vh;
+    /* height: 60vh; */
     }
 /* ~header~ */
 /* ~content~ */
@@ -1416,21 +1436,16 @@ width: 100%;
 .rst_suggest{
     width: 100%;
     background-color: #e8dcd7;
-    padding: 50px;
+    padding:50px 50px 0 50px;
     box-sizing: border-box;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
-.rst_suggest_bg{
+.rst_suggest_main a{
+    display:block;
     width: 100%;
- 
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    display:none;
-
+    height: 100%;
 }
 
 /* title_box */
@@ -1441,7 +1456,8 @@ width: 100%;
     box-sizing: border-box;
     border: 1px #fff solid;
     padding:5px;
-    margin-bottom: 40px;        
+    margin-bottom: 40px;
+           
 }
 
 .rst_suggest .title_box .title{
@@ -1501,7 +1517,7 @@ width: 100%;
         
     }
     .rst_suggest{
-        padding: 50px 0;
+        padding: 30px 0px;
     }
  
     .rst_suggest_main .item{
@@ -1541,11 +1557,9 @@ width: 100%;
     line-height: 20px;
 }
 
-.star{
-    vertical-align: middle;
-}
 
 .star img{
+   
     width: 10px;
     margin:0 2px;
 }
@@ -1587,7 +1601,9 @@ width: 100%;
 /* rat_ad */
 .rst_ad_box{
    width: 100%;
-   margin: 50px 0;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.22);
 }
 
 .rst_ad_box .rst_ad{
@@ -1611,6 +1627,7 @@ width: 100%;
 .rst_ad_box img{
    width: 100%;
    height: 100%;
+   vertical-align: bottom;
 }
 
 @media screen and (min-width:768px){
@@ -1658,7 +1675,7 @@ background-color: #e8dcd7;
 
 }
 
-.res_news_wrap{
+/* .res_news_wrap{
 display:flex;
 flex-flow:column;
 justify-content: center;
@@ -1666,6 +1683,10 @@ align-items: center;
 max-width: 1200px;
 margin: auto;
 justify-content: space-between;
+}
+
+.res_news_wrap img{
+    width: 100%;
 }
 
 .res_news_wrap .pic_box{
@@ -1710,7 +1731,7 @@ opacity: .8;
 .res_news_wrap .item{
     margin-top:0;
 }
-}
+} */
 
 
 
@@ -1916,6 +1937,10 @@ letter-spacing:5px;
     right: 0;
     text-align: center;
     background-color: #bdd6cf;
+}
+
+.acm_wrknear span:hover{
+    background-color: #d3bb80;
 }
 
 /* ---------app--------- */
