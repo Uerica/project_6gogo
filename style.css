@@ -1690,6 +1690,7 @@ opacity: .8;
   background-color: #bdd6cf;
   box-sizing: border-box;
   padding: 5px;
+  cursor: pointer;
 }
 
 .smallimg_box {
