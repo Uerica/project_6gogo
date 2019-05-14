@@ -506,9 +506,7 @@ position: relative;
     margin: auto;
 }
 .go_walkdog_wrap .pic{
-    width: 90%;
-    height: 300px;
-    background-color: #ccc;
+    width:100%;
     margin: auto;
     position: relative;
 }
@@ -545,6 +543,8 @@ position: relative;
         margin-top:100px;
        
     }
+
+
     
     .go_walkdog_wrap .pic_box{
         width: 100%;
@@ -569,7 +569,6 @@ position: relative;
     .go_walkdog_wrap_t .pic_pc{
         display: block;
         width: 40%;
-   
         order: 2;
     }
 
@@ -630,7 +629,7 @@ position: relative;
         display: block;
     }
 
-    .go_walkdog_wrap_m .txt{
+    .go_walkdog_wrap_m .item .txt{
         width: 100%;
         max-width: 600px;
         position: absolute;
@@ -640,7 +639,8 @@ position: relative;
         transform: translate(0,50%);
         display: flex;
         flex-flow: column;
-        justify-content: flex-end
+        justify-content: flex-end;
+        margin: 30px 0;
     }
 
 
@@ -2059,7 +2059,7 @@ margin-left: 10px;
     max-width: 1200px;
     box-sizing: border-box;
     margin: auto;
-    min-width: 390px;
+    
     text-align: center;
 }
 
@@ -2105,7 +2105,7 @@ font-size: 1rem;
     background-color: #e8dcd7;;
     box-sizing: border-box;
     padding: 50px;
-    margin-top: 280px;
+    margin-top: 100px;
     position: relative;
 }
 
@@ -2126,15 +2126,19 @@ font-size: 1rem;
 
 .mem_contain .dog_pic{
     width: 30%;
-    height: 30%;
     margin: auto;
-   
+    display:none;
 }
 
 .mem_contain img{
-    width: 100%;
+    width:100%;
     position: absolute;
-    top:-300px;
-    right: 0;
-    margin: auto;
+    bottom: 0;
+    
+}
+
+@media screen and (min-width:768px){
+    .mem_contain .dog_pic{
+        display: block;
+    }  
 }
