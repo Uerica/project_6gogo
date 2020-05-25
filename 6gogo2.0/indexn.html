@@ -6,92 +6,181 @@
     <meta name="viewport" content="width=device-width, initial_scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+   
     <link rel="stylesheet" href="col.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"/>
-    <title>6gogo遛狗狗</title>
+	<title>6gogo遛狗狗</title>
+	<style>
+
+		body {
+			font-family: "Noto Sans TC", sans-serif;
+		}
+
+		.main_header .container{
+			width: 100%;
+			height: 10vh;
+			padding: 1%;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+		}
+
+		.main_header .container .logo{
+			width: 80px;
+		}
+
+		.main_header .container img{
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.main_header .container .main_nav{
+			margin-left: auto;
+		}
+
+		.main_header .main_nav a{
+			text-decoration: none;
+			color: #346794;
+			margin: 0px 10px;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.main_header .main_search{
+			width: 100%;
+			height: 90vh;
+			background-color:rebeccapurple;
+			position: relative;
+		}
+
+		.main_header .main_search .content{
+			width: 30%;
+			height: 50%;
+			background-color: red;
+			margin: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			box-sizing: border-box;
+			border: #346794 5px solid;
+			border-radius: 5%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.main_header .main_search .main_select{
+			background-color: saddlebrown;
+			display: flex;
+			padding: 5%;
+			box-sizing: border-box;
+			justify-content: space-between;
+		}
+
+		.main_header .main_select a{
+			text-decoration: none;
+			background-color: sandybrown;
+			font-size: 16px;
+			color: #346794;
+		}
+
+		.main_header .form{
+			padding: 5%;
+			box-sizing: border-box;
+			background-color: seagreen;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: stretch;
+			flex-grow: 1;
+		}
+
+		.main_header .form .search_bar{
+	
+		}
+
+		.main_header .form .search_bar input{
+			width: 100%;
+			text-decoration: none;
+			border: none;
+			box-sizing: border-box;
+		}
+
+		.main_header .form .select_bar{
+		
+		}
+
+		.main_header .form select{
+			width: 100%;
+		}
+
+		.main_header .form .btn{
+		
+		}
+
+		.main_header .form .btn input{
+			width: 100%;
+		}
+
+		
+
+
+
+	</style>
   </head>
 
-  <body class="load">
-    <!-- -----------------------header------------------------- -->
-    <header>
-      <!-- -----------------------navbar------------------------- -->
-      <div class="navbar">
-        <input type="checkbox" id="menu_control" />
-        <div class="navlogo">
-          <h1>
-            <a href="index.html">
-              <img src="img/logo_w.svg" alt="6gogo 遛狗狗" />
-            </a>
-          </h1>
+  <body class="homepage">
+    <header class="main_header">
+		<div class="container">
+			<div class="logo">
+				<h1>
+					<a href="indexn.html">
+						<img src="img/logo_w.svg" alt="6gogo 遛狗狗" />
+					</a>
+				</h1>
+			</div>
 
-          <label for="menu_control" class="hb_link">
-            <span class="line line_t"></span>
-            <span class="line line_c"></span>
-            <span class="line line_b"></span>
-          </label>
-        </div>
-        <nav class="main_nav">
-          <div class="search_bar">
-            <a href="index.html"
-              ><img src="img/search_icon.svg" alt="search"
-            /></a>
-          </div>
-          <a href="wrkdg.html">遛狗景點</a>
-          <a href="acmdtin.html">友善住宿</a>
-          <a href="rstrnt.html">寵物餐廳</a>
-          <a href="#">我的收藏</a>
-          <a href="member.html">會員中心</a>
-          <a href="#" class="search_pc_a"
-            ><img src="img/search_icon.svg" alt="#" class="search_pc"
-          /></a>
-        </nav>
-      </div>
-      <!-- -----------------------navbar------------------------- -->
-      <!-- -----------------------carousel------------------------- -->
-      <div class="container">
-        <div class="carousel">
-          <div class="carousel_prev"></div>
-          <div class="carousel_next"></div>
-          <ul class="carousel_pagination">
-            <li class="carousel_bullet"></li>
-            <li class="carousel_bullet"></li>
-            <li class="carousel_bullet"></li>
-            <li class="carousel_bullet"></li>
-            <li class="carousel_bullet"></li>
-          </ul>
-          <ul class="carousel_container">
-            <li class="carousel_item">
-              <div class="item">
-                <img src="img/headerbanner01.jpg" alt="photo" />
-              </div>
-            </li>
-            <li class="carousel_item">
-              <div class="item">
-                <img src="img/headerbanner02.jpg" alt="photo" />
-              </div>
-            </li>
-            <li class="carousel_item">
-              <div class="item">
-                <img src="img/headerbanner03.jpg" alt="photo" />
-              </div>
-            </li>
-            <li class="carousel_item">
-              <div class="item">
-                <img src="img/headerbanner04.jpg" alt="photo" />
-              </div>
-            </li>
-            <li class="carousel_item">
-              <div class="item">
-                <img src="img/headerbanner05.jpg" alt="photo" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- -----------------------carousel_------------------------ -->
+			<nav class="main_nav">
+				<a href="wrkdg.html">遛狗景點</a>
+				<a href="acmdtin.html">友善住宿</a>
+				<a href="rstrnt.html">寵物餐廳</a>
+				<a href="#">我的收藏</a>
+				<a href="member.html">狗狗日誌</a>
+			</nav>
+		</div>
+
+		<div class="main_search">
+			<div class="content">
+				<div class="main_select">
+					<a href="#"><span>icon</span>遛狗景點</a>
+					<a href="#"><span>icon</span>友善住宿</a>
+					<a href="#"><span>icon</span>寵物餐廳</a>
+				</div>
+
+				<div class="form">
+					<div class="search_bar">
+						<input type="text">
+					</div>
+					<div class="select_bar">
+						<select name="AreaSearch" id="AreaSearch">
+							<option value="TaipeiCity">台北市</option>
+							<option value="NewTaipeiCity">新北市</option>
+							<option value="TaipeiCity">台北市</option>
+							<option value="NewTaipeiCity">新北市</option>
+						</select>
+					</div>
+					<div class="btn"><input type="submit" value="立即搜尋"></div>
+				</div>
+			</div>
+		</div>
     </header>
-    <!-- -----------------------header------------------------- -->
+	<!-- -----------------------header------------------------- -->
+	
+
+
+
     <!-- ----------------------content------------------------- -->
     <div class="content">
       <section class="main">
@@ -281,50 +370,6 @@
       </div>
     </footer>
 
-    <script>
-      var carousel = document.querySelector(".carousel");
-      var container = carousel.querySelector(".carousel_container");
-      var prevBtn = carousel.querySelector(".carousel_prev");
-      var nextBtn = carousel.querySelector(".carousel_next");
-      var pagination = carousel.querySelector(".carousel_pagination");
-      var bullets = [].slice.call(
-        carousel.querySelectorAll(".carousel_bullet")
-      );
-      var totalItems = container.querySelectorAll(".carousel_item").length;
-      var percent = 100 / totalItems;
-      var currentIndex = 0;
-
-      function next() {
-        slideTo(currentIndex + 1);
-      }
-
-      function prev() {
-        slideTo(currentIndex - 1);
-      }
-
-      function slideTo(index) {
-        index = index < 0 ? totalItems - 1 : index >= totalItems ? 0 : index;
-        container.style.WebkitTransform = container.style.transform =
-          "translate(-" + index * percent + "%, 0)";
-        bullets[currentIndex].classList.remove("active_bullet");
-        bullets[index].classList.add("active_bullet");
-        currentIndex = index;
-      }
-
-      bullets[currentIndex].classList.add("active_bullet");
-      prevBtn.addEventListener("click", prev, false);
-      nextBtn.addEventListener("click", next, false);
-
-      pagination.addEventListener(
-        "click",
-        function(e) {
-          var index = bullets.indexOf(e.target);
-          if (index !== -1 && index !== currentIndex) {
-            slideTo(index);
-          }
-        },
-        false
-      );
-    </script>
+   
   </body>
 </html>
